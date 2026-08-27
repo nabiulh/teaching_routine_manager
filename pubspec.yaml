@@ -1,27 +1,21 @@
 name: teaching_routine_manager
-description: Offline Teaching Routine & Batch Manager for independent tutors.
-publish_to: "none"
+description: A digital teaching log and routine manager.
+publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=3.4.0 <4.0.0"
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  provider: ^6.1.5+1
-  shared_preferences: ^2.5.3
-  intl: ^0.20.2
-  path_provider: ^2.1.5
-  file_picker: ^10.3.2
-  flutter_local_notifications: ^19.4.1
-  timezone: ^0.10.1
-  flutter_timezone: ^5.0.0
+  # লোকাল ডেটাবেস সেভ রাখার জন্য শুধু এটিই দরকার
+  shared_preferences: ^2.2.2 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^6.0.0
+  flutter_lints: ^4.0.0
 
 flutter:
   uses-material-design: true
