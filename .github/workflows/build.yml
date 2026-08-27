@@ -24,6 +24,10 @@ jobs:
       - name: Flutter version
         run: flutter --version
 
+      # এই নতুন কমান্ডটি আপনার missing android ফোল্ডার জেনারেট করে দেবে
+      - name: Create Flutter Project Files
+        run: flutter create .
+
       - name: Install dependencies
         run: flutter pub get
 
